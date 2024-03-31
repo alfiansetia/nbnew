@@ -1,0 +1,258 @@
+.slider .btn-primary, .service-page .btn-primary {
+  border: solid #ee6900 1.5px;
+  padding: 10px 50px;
+  background-color: transparent;
+  color: #ee6900;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px !important;
+}
+.slider .btn-primary:hover {
+  background-color: #ee6900 !important;
+  color: white;
+}
+
+.about-area {
+  width: 100rem;
+}
+.about-area h3 {
+  font-weight: bold;
+  color: #535353;
+}
+.about-area p {
+  color: #535353;
+}
+.about-area .btn-primary,
+.services-area .btn-primary{
+  border: solid #ee6900 1.5px;
+  padding: 6px 30px;
+  background-color: transparent !important;
+  color: #ee6900;
+  font-weight: bold;
+  border-radius: 30px !important;
+}
+.portfolio-group .btn-primary{
+  border: solid #ee6900 1.5px;
+  padding: 4px 23px;
+  background-color: transparent !important;
+  color: #ee6900;
+  font-weight: bold;
+  border-radius: 30px !important;
+}
+
+.about-area .btn-primary:hover,
+.services-area .btn-primary:hover,
+.portfolio-group .btn-primary:hover {
+  background-color: #ee6900 !important;
+  color: white;
+}
+
+.about-content {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 80px 20px 80px 200px;
+}
+
+img.dog-image {
+  position: absolute;
+  left: 10rem;
+  z-index: 2;
+  width: 827px;
+}
+.choose-area h2,
+.portfolio-area h2,
+.testimonial-area h2,
+.testimonial-area h3,
+.services-area h2 {
+  color: #535353;
+}
+
+.choose-area .choose-content h3 {
+  font-weight: 700;
+  color: #535353;
+}
+
+img.choose-image {
+  width: 50rem;
+  height: fit-content;
+}
+.choose-area .choose-content .d-flex {
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+li.filtr {
+  background: #ee6900;
+  color: white;
+  padding: 6px 12px;
+}
+
+.portfolio-menu li {
+  margin: 0;
+  font-weight: 400;
+}
+.testimonial-area {
+  background-color: #f8f8f8;
+}
+
+.text-start {
+  text-align: start;
+}
+.btn-brawn {
+  background-color: transparent !important;
+  border: #535353 solid 1.5px !important;
+  border-radius: 4px !important;
+}
+
+/* Styles for the checkbox */
+.form-check-input {
+  transform: scale(1.7); /* Memperbesar ukuran checkbox */
+}
+
+
+.product-body h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.bg-gray {
+  background-color: #f5f5f5;
+  height: 50px;
+}
+.product-body .bg-gray {
+  border-radius: 8px;
+}
+
+.label-porto-page {
+  color: #ee6900;
+}
+.evenly-porto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-page-porto li {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+input[type="radio"] {
+  accent-color: #ee6900;
+}
+.porto-item-flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.faq-header-porto button.faq-button {
+  cursor: pointer;
+  font-size: 16px !important;
+  text-align: left;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #313131;
+  background: none;
+  border-bottom: 1px solid;
+}
+
+
+
+.portfolio-text h4 a{
+  font-size: 20px !important;
+}
+
+.banner-slider-contact{
+  background-color: #F8F8F8;
+  padding: 8rem 0;
+}
+.banner-slider-contact h1{
+  font-weight: bold;
+  color: #535353;
+  align-items: center; 
+  text-align: center;
+}
+.contact-area h2{
+  font-weight: bold; 
+  color: #535353;
+}
+
+.contact-form .form-group input{
+  border-bottom: 1px solid #B9B9B9;
+ 
+}
+
+textarea {
+  border-radius: 20px !important; 
+  padding: 10px; 
+  border: 1px solid #ccc;
+}
+
+.btn-wa{
+  padding: 2px 20px; 
+  background-color: #1FAF38;
+  border-radius: 50px !important; 
+  font-weight: 400 !important;
+  font-size: 16px;
+  color: white;
+}
+.banner-slider-service{
+  padding: 8rem 0;
+}
+.banner-slider-service h1{
+  color: #535353;
+  margin-bottom: 2rem;
+}
+.banner-slider-service p{
+  padding: 0 12rem;
+  font-size: 18px !important;
+}
+.contact-area ul {
+  list-style: none;
+
+}
+.contact-area ul li, .contact-area p{
+  font-size: 18px;
+}
+/* .service-page .btn-primary{
+  background-color: #ee6900;
+  border: none;
+  border-radius: 50px !important;
+  padding: 0;
+} */
+
+.banner-slider-service{
+  background-color: #F8F8F8;
+}
+
+.banner-slider-fqa, .banner-slider-testimonial{
+  padding: 4rem 0;
+  background-color: #F8F8F8;
+}
+.banner-slider-fqa h1, .banner-slider-testimonial h1{
+  color: #535353;
+}
+.faq-reminder{
+  width: 100%;
+  background: #F3F3F3;
+  border-radius: 12px;
+  text-align: center;
+}
+.faq-reminder h2{
+  font-weight: bold;
+  color: #444444;
+}
+.faq-reminder p{
+  font-size: 16px;
+}
+.faq-reminder span{
+  color: #EE6900;
+}
+.testimonial-item-testi img-comparison-slider.rendered {
+  border-radius: 12px !important;
+}
