@@ -1,11 +1,11 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Model_portfolio extends CI_Model 
+class Model_portfolio extends CI_Model
 {
 
-	function get_auto_increment_id()
+    function get_auto_increment_id()
     {
         $sql = "SHOW TABLE STATUS LIKE 'tbl_portfolio'";
         $query = $this->db->query($sql);
@@ -18,8 +18,9 @@ class Model_portfolio extends CI_Model
         $query = $this->db->query($sql);
         return $query->result_array();
     }
-	
-    function show() {
+
+    function show()
+    {
         $sql = "SELECT * 
 				FROM tbl_portfolio t1
 				JOIN tbl_portfolio_category t2
@@ -36,7 +37,7 @@ class Model_portfolio extends CI_Model
         $sql = "SELECT * 
     			FROM tbl_portfolio_photo 
     			WHERE portfolio_id=?";
-        $query = $this->db->query($sql,array($id));
+        $query = $this->db->query($sql, array($id));
         return $query->result_array();
     }
 
@@ -49,57 +50,83 @@ class Model_portfolio extends CI_Model
         return $query->result_array();
     }
 
-    function add($data) {
-        $this->db->insert('tbl_portfolio',$data);
+    function add($data)
+    {
+        $this->db->insert('tbl_portfolio', $data);
         return $this->db->insert_id();
     }
 
-    function add_photos($data) {
-        $this->db->insert('tbl_portfolio_photo',$data);
+    function add_photos($data)
+    {
+        $this->db->insert('tbl_portfolio_photo', $data);
         return $this->db->insert_id();
     }
 
-    function update($id,$data) {
-        $this->db->where('id',$id);
-        $this->db->update('tbl_portfolio',$data);
+    function update($id, $data)
+    {
+        $this->db->where('id', $id);
+        $this->db->update('tbl_portfolio', $data);
     }
 
     function delete($id)
     {
-        $this->db->where('id',$id);
+        $this->db->where('id', $id);
         $this->db->delete('tbl_portfolio');
     }
 
     function delete_photos($id)
     {
-        $this->db->where('portfolio_id',$id);
+        $this->db->where('portfolio_id', $id);
         $this->db->delete('tbl_portfolio_photo');
     }
 
     function getData($id)
     {
         $sql = 'SELECT * FROM tbl_portfolio WHERE id=?';
-        $query = $this->db->query($sql,array($id));
+        $query = $this->db->query($sql, array($id));
         return $query->first_row('array');
     }
 
     function portfolio_check($id)
     {
         $sql = 'SELECT * FROM tbl_portfolio WHERE id=?';
-        $query = $this->db->query($sql,array($id));
+        $query = $this->db->query($sql, array($id));
         return $query->first_row('array');
     }
 
     function portfolio_photo_by_id($id)
     {
         $sql = 'SELECT * FROM tbl_portfolio_photo WHERE id=?';
-        $query = $this->db->query($sql,array($id));
+        $query = $this->db->query($sql, array($id));
         return $query->first_row('array');
     }
     function delete_portfolio_photo($id)
     {
-        $this->db->where('id',$id);
+        $this->db->where('id', $id);
         $this->db->delete('tbl_portfolio_photo');
     }
-    
+
+    public function get_all_texture()
+    {
+        $query = $this->db->get('texture');
+        return $query->result_array();
+    }
+
+    public function get_all_specific_needs()
+    {
+        $query = $this->db->get('specific_needs');
+        return $query->result_array();
+    }
+
+    public function get_all_product_type()
+    {
+        $query = $this->db->get('product_type');
+        return $query->result_array();
+    }
+
+    public function get_all_age()
+    {
+        $query = $this->db->get('age');
+        return $query->result_array();
+    }
 }
