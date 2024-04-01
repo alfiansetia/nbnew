@@ -21,7 +21,7 @@ class Model_portfolio extends CI_Model
 
     function show()
     {
-        $sql = "SELECT * 
+        $sql = "SELECT *, t1.photo AS t1_photo, t2.photo AS t2_photo
 				FROM tbl_portfolio t1
 				JOIN tbl_portfolio_category t2
 				ON t1.category_id = t2.category_id

@@ -49,3 +49,82 @@ ERROR - 2024-03-31 04:50:35 --> 404 Page Not Found: Public/uploads
 ERROR - 2024-03-31 04:51:11 --> 404 Page Not Found: Public/uploads
 ERROR - 2024-03-31 04:53:56 --> 404 Page Not Found: Public/uploads
 ERROR - 2024-03-31 04:55:14 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:36:02 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:36:06 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:36:09 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:36:11 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:36:11 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:36:11 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:36:13 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:36:15 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:36:24 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:37:30 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:38:19 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:38:32 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:40:55 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:49:00 --> Severity: Notice --> Undefined index: lang_name C:\laragon\www\nbnew\application\views\admin\view_portfolio.php 61
+ERROR - 2024-03-31 07:49:00 --> Severity: Notice --> Undefined index: lang_name C:\laragon\www\nbnew\application\views\admin\view_portfolio.php 61
+ERROR - 2024-03-31 07:49:00 --> Severity: Notice --> Undefined index: lang_name C:\laragon\www\nbnew\application\views\admin\view_portfolio.php 61
+ERROR - 2024-03-31 07:49:00 --> Severity: Notice --> Undefined index: lang_name C:\laragon\www\nbnew\application\views\admin\view_portfolio.php 61
+ERROR - 2024-03-31 07:49:00 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:49:45 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM tbl_portfolio t1
+				JOIN tbl_portfolio_category t2
+				ON t1.category_id =' at line 2 - Invalid query: SELECT *, t1.photo AS t1_photo,
+				FROM tbl_portfolio t1
+				JOIN tbl_portfolio_category t2
+				ON t1.category_id = t2.category_id
+                JOIN tbl_lang t3
+                ON t1.lang_id = t3.lang_id
+                ORDER BY t1.id ASC
+ERROR - 2024-03-31 07:49:51 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:50:15 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:50:30 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:51:00 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:51:00 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:51:00 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:51:00 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:51:51 --> Severity: error --> Exception: Call to undefined method Model_portfolio::get_all_texture() C:\laragon\www\nbnew\application\controllers\admin\Portfolio.php 189
+ERROR - 2024-03-31 07:52:05 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:05 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:05 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:05 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:52:06 --> Severity: error --> Exception: Call to undefined method Model_portfolio::get_all_texture() C:\laragon\www\nbnew\application\controllers\admin\Portfolio.php 189
+ERROR - 2024-03-31 07:52:07 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:07 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:07 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:07 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:52:09 --> Severity: error --> Exception: Call to undefined method Model_portfolio::get_all_texture() C:\laragon\www\nbnew\application\controllers\admin\Portfolio.php 32
+ERROR - 2024-03-31 07:52:11 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:11 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:11 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:11 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:52:29 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:29 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:29 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:29 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:52:30 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:30 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:52:37 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:37 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:37 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:37 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:52:38 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:38 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:52:47 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:47 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:47 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:47 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:52:49 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:52:49 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:54:04 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:54:04 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:54:04 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:54:04 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:54:15 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:54:15 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:54:24 --> Severity: Warning --> unlink(./public/uploads/portfolio-14.png): No such file or directory C:\laragon\www\nbnew\application\controllers\admin\Portfolio.php 262
+ERROR - 2024-03-31 07:54:24 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:54:24 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:54:24 --> 404 Page Not Found: Public/admin
+ERROR - 2024-03-31 07:54:31 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-03-31 07:54:31 --> 404 Page Not Found: Public/admin
