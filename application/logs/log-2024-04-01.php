@@ -23,3 +23,16 @@ ERROR - 2024-04-01 00:31:10 --> 404 Page Not Found: Public/uploads
 ERROR - 2024-04-01 00:31:10 --> 404 Page Not Found: Public/uploads
 ERROR - 2024-04-01 00:31:11 --> 404 Page Not Found: Public/uploads
 ERROR - 2024-04-01 00:31:11 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-04-01 00:37:00 --> 404 Page Not Found: Public/admin
+ERROR - 2024-04-01 00:37:01 --> 404 Page Not Found: Public/admin
+ERROR - 2024-04-01 00:37:01 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-04-01 00:37:01 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-04-01 00:37:01 --> 404 Page Not Found: Public/admin
+ERROR - 2024-04-01 00:37:03 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-04-01 00:37:03 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-04-01 00:37:03 --> 404 Page Not Found: Public/admin
+ERROR - 2024-04-01 00:37:04 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-04-01 00:37:04 --> 404 Page Not Found: Public/admin
+ERROR - 2024-04-01 00:37:28 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-04-01 00:37:28 --> 404 Page Not Found: Public/uploads
+ERROR - 2024-04-01 00:37:28 --> 404 Page Not Found: Public/admin
