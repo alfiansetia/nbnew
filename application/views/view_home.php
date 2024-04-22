@@ -67,7 +67,7 @@
 
 <!--About Start-->
 <?php if ($page_home_lang_independent['home_welcome_status'] == 'Show') : ?>
-    <div class="about-area pt_10 pb_60">
+    <div class="about-area pt_10 pb_60 mx-auto">
         <div class="row">
             <div class="col-lg-4 mt_30">
                 <img class="dog-image" src="<?php echo base_url(); ?>public/images/about-1.png" alt="About Photo">
