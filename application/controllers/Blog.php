@@ -15,6 +15,7 @@ class Blog extends MY_Controller
     {
         $data['setting'] = $this->Model_common->all_setting();
         $data['page_home'] = $this->Model_common->all_page_home();
+        $data['page_news'] = $this->Model_common->all_page_news();
         $data['page_home_lang_independent'] = $this->Model_common->all_page_home_lang_independent();
         $data['comment'] = $this->Model_common->all_comment();
         $data['social'] = $this->Model_common->all_social();

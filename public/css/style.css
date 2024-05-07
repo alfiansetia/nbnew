@@ -26,7 +26,7 @@ body {
 	outline: none;
 }
  .container {
-    min-width: 1280px !important;
+    /*min-width: 1280px !important;*/
 } 
 
 p {
@@ -835,7 +835,9 @@ Slider
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
-	height: 600px;
+	/*height: 600px;*/
+	padding: 10px 0px;
+    height: 100vh;
 	color: #fff;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
@@ -3531,12 +3533,10 @@ Footer
 
 .footer-item ul li {
 	display: block;
-	margin-bottom: 12px;
+	margin-bottom: 5px;
 }
 
-/* .footer-item ul li:last-child {
-	margin-bottom: 0;
-} */
+
 
 .footer-item ul li a {
 	position: relative;
@@ -3572,7 +3572,7 @@ Footer
 	position: relative;
 	font-size: 22px;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none;
 	color: #313131;
 	padding-bottom: 12px;
 	margin-bottom: 36px;
@@ -3711,18 +3711,22 @@ Footer
 	height: 48px;
 	border: 1.5px solid #B9B9B9 !important;
 	z-index: 3 !important;
-	border-radius: 4px !important;
+	border-radius: 8px !important;
 	background-color: transparent !important;
 }
 
 .footer-item .btn {
 	cursor: pointer;
+	height: 45px !important; 
+	padding: 0px 20px;
+	border-radius: 8px !important;
 	font-size: 20px;
 	border: 1.5px solid #B9B9B9 !important;
 	z-index: 3 !important;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 }
+
 
 .footer-project {
 	padding-left: 5px;
@@ -5446,5 +5450,11 @@ span.input-group-btn {
 	color: #0e76a8!important;
 	background: #fff;
 }
+
+@media screen and (min-width: 1920px) {
+   
+     .container {
+    min-width: 1280px !important;
+} }
 
 

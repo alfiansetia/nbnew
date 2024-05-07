@@ -47,8 +47,8 @@
             foreach ($feature as $key => $value) {
             ?>
                 <div class="col-12 col-md text-center p-3 mb-3 mr-md-3" style="background-color: #F8F8F8; border-radius:20px;">
-                    <!-- <img class="mb-5 mt-5" src="<?= base_url() ?>public/images/service-1.png" alt=""> -->
-                    <i class="<?= $value['icon'] ?> icon-about mb-5 mt-5"></i>
+                     <img class="mb-5 mt-5" src="<?= base_url() ?>public/uploads/<?= $value['icon'] ?>" alt=""> 
+                    <!--<i class="<?= $value['icon'] ?> icon-about mb-5 mt-5"></i>-->
                     <p class="mb-4"><?= $value['content'] ?></p>
                 </div>
             <?php } ?>

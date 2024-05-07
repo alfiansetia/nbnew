@@ -46,7 +46,7 @@ class Product extends MY_Controller
 				'filter' => []
 			);
 		}
-
+// 		var_dump($data['portfolio']);
 
 		$this->load->view('view_header', $data);
 		$this->load->view('view_portfolio', $data);
@@ -86,7 +86,7 @@ class Product extends MY_Controller
 		$data['comment'] = $this->Model_common->all_comment();
 		$data['social'] = $this->Model_common->all_social();
 		$data['all_news'] = $this->Model_common->all_news();
-
+		$data['portfolio_photo'] = $this->Model_portfolio->get_portfolio_photo($id);
 		$data['portfolio_category'] = $this->Model_portfolio->get_portfolio_category();
 		$data['portfolio'] = $this->Model_portfolio->get_portfolio_detail($id);
 

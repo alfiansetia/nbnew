@@ -210,9 +210,12 @@ $success_message = '';
     <script src="<?php echo base_url(); ?>public/js/toastr.min.js"></script>
 
     <style>
+     .searchbar .input-search{
+            background-color: #ee6900  !important;
+        }
         .header-area,
         ul.nav-menu li ul li a,
-        .searchbar .input-search,
+       
         .text-animated li a,
 
 
@@ -570,6 +573,18 @@ $success_message = '';
         .icon-about {
             font-size: 50px !important;
         }
+        
+        img.choose-image {
+            width: 50rem;
+            height: auto;
+        }
+        
+        .blog-text h3 a {
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
     </style>
 
 </head>
@@ -599,7 +614,7 @@ $success_message = '';
             <div class="row">
                 <div class="col-lg-3 col-12">
                     <div class="logo flex">
-                        <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>public/images/Logo.png ?>" alt="Logo"></a>
+                        <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>public/images/logo-nb.png ?>" alt="Logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-12 main-menu">

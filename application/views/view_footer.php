@@ -24,14 +24,14 @@
     </style>
 
     <!-- footer -->
-    <div class="footer-area pt_60 pb_90">
+    <div class="footer-area pt_60 pb-5">
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-5 col-md-6">
                     <div class="footer-item" id="newsletter">
                         <p>
-                            <img src="<?php echo base_url(); ?>public/images/Logo.png ?>" alt="Logo">
+                            <img src="<?php echo base_url(); ?>public/images/logo-nb.png?>" alt="Logo">
                         </p>
                         Stay in touch and keep up to date with the latest news.
                         <?php echo form_close(); ?>
@@ -62,12 +62,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-item">
                         <h3>Get updates and stay connected</h3>
-                        <div class="d-flex align-items-center">
-                            <div class="form-group">
-                                <input type="text" placeholder="enter your email address" class="form-control">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="form-group mb-0">
+                                <input type="text" placeholder="enter your email address" class="form-control" style="width: 265px">
                             </div>
                             <div>
-                                <button class="btn btn-brawn ml-2">Sign Up</button>
+                                <button class="btn btn-brown ml-2 py-2">Sign Up</button>
                             </div>
                         </div>
                         <div class="d-flex" x>
@@ -158,7 +158,18 @@
             ';
     endif;
     ?>
-
+    <script>
+        window.onload = function() {
+            var screenWidth = window.screen.availWidth;
+            var targetWidth = screenWidth * 0.8;
+            window.resizeTo(targetWidth, window.innerHeight);
+        };
+    </script>
+    <script>
+        function redirectToUrl(url) {
+            window.location.href = '<?= base_url() ?>' + url;
+        }
+    </script>
 
     </body>
 

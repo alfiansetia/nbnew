@@ -8,9 +8,13 @@ class Model_portfolio extends CI_Model
         $query = $this->db->query("SELECT * FROM tbl_portfolio_category WHERE lang_id=? ORDER BY category_name ASC", [$_SESSION['sess_lang_id']]);
         return $query->result_array();
     }
-    public function get_portfolio_data()
+    public function get_portfolio_data($type = null)
     {
-        $query = $this->db->query("SELECT * from tbl_portfolio WHERE lang_id=? ORDER BY id DESC", [$_SESSION['sess_lang_id']]);
+        if ($type != null || $type != '') {
+            $query = $this->db->query("SELECT p.*,t.type  from tbl_portfolio p JOIN product_type t ON p.product_type_id=t.id WHERE p.product_type_id=$type AND lang_id=?", [$_SESSION['sess_lang_id']]);
+        } else {
+            $query = $this->db->query("SELECT p.*,t.type  from tbl_portfolio p JOIN product_type t ON p.product_type_id=t.id WHERE lang_id=?", [$_SESSION['sess_lang_id']]);
+        }
         return $query->result_array();
     }
     public function get_portfolio_data_specific($key, $value)
@@ -30,7 +34,7 @@ class Model_portfolio extends CI_Model
     }
     public function get_portfolio_detail($id)
     {
-        $sql = 'SELECT * FROM tbl_portfolio WHERE id=?';
+        $sql = 'SELECT p.*,t.type, x.texture_name  from tbl_portfolio p JOIN product_type t ON p.product_type_id=t.id JOIN texture x ON p.texture_id=x.id WHERE p.id=?';
         $query = $this->db->query($sql, array($id));
         return $query->first_row('array');
     }

@@ -11,7 +11,7 @@ if(!$this->session->userdata('id')) {
 
   <div class="row">
 
-    <div class="col-md-4 col-sm-6 col-xs-12">
+    <!--<div class="col-md-4 col-sm-6 col-xs-12">
       <div class="info-box">
         <span class="info-box-icon bg-green"><i class="fa fa-hand-o-right"></i></span>
 
@@ -100,7 +100,7 @@ if(!$this->session->userdata('id')) {
           <span class="info-box-number"><?php echo $total_pricing_table; ?></span>
         </div>
       </div>
-    </div>
+    </div>-->
 
     
 

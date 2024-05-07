@@ -1,7 +1,7 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Model_common extends CI_Model 
+class Model_common extends CI_Model
 {
     function all_lang()
     {
@@ -10,29 +10,32 @@ class Model_common extends CI_Model
         return $query->result_array();
     }
 
-	public function get_setting_data()
+    public function get_setting_data()
     {
         $query = $this->db->query("SELECT * from tbl_settings WHERE id=1");
         return $query->first_row('array');
     }
-    
-    public function extension_check_photo($ext) {
-    	if( $ext!='jpg' && $ext!='png' && $ext!='jpeg' && $ext!='gif' && $ext!='JPG' && $ext!='PNG' && $ext!='JPEG' && $ext!='GIF' ) {
-    		return false;
-    	} else {
-    		return true;
-    	}
+
+    public function extension_check_photo($ext)
+    {
+        if ($ext != 'jpg' && $ext != 'png' && $ext != 'jpeg' && $ext != 'gif' && $ext != 'JPG' && $ext != 'PNG' && $ext != 'JPEG' && $ext != 'GIF') {
+            return false;
+        } else {
+            return true;
+        }
     }
-    public function extension_check_file($ext) {
-        if( $ext!='jpg' && $ext!='png' && $ext!='jpeg' && $ext!='gif' && $ext!='JPG' && $ext!='PNG' && $ext!='JPEG' && $ext!='GIF' && $ext!='pdf' && $ext!='PDF' && $ext!='doc' && $ext!='DOC' && $ext!='docx' && $ext!='DOCX' && $ext!='xls' && $ext!='XLS' && $ext!='xlsx' && $ext!='XLSX' && $ext!='csv' && $ext!='CSV' ) {
+    public function extension_check_file($ext)
+    {
+        if ($ext != 'jpg' && $ext != 'png' && $ext != 'jpeg' && $ext != 'gif' && $ext != 'JPG' && $ext != 'PNG' && $ext != 'JPEG' && $ext != 'GIF' && $ext != 'pdf' && $ext != 'PDF' && $ext != 'doc' && $ext != 'DOC' && $ext != 'docx' && $ext != 'DOCX' && $ext != 'xls' && $ext != 'XLS' && $ext != 'xlsx' && $ext != 'XLSX' && $ext != 'csv' && $ext != 'CSV') {
             return false;
         } else {
             return true;
         }
     }
 
-    public function image_handler($source_image,$destination,$tn_w = 100,$tn_h = 100,$quality = 80) {
-        
+    public function image_handler($source_image, $destination, $tn_w = 100, $tn_h = 100, $quality = 80)
+    {
+
         $info = getimagesize($source_image);
         $imgtype = image_type_to_mime_type($info[2]);
 
@@ -52,25 +55,39 @@ class Model_common extends CI_Model
 
         $src_w = imagesx($source);
         $src_h = imagesy($source);
-        $src_ratio = $src_w/$src_h;
+        $src_ratio = $src_w / $src_h;
 
-        if ($tn_w/$tn_h > $src_ratio) {
-            $new_h = $tn_w/$src_ratio;
+        if ($tn_w / $tn_h > $src_ratio) {
+            $new_h = $tn_w / $src_ratio;
             $new_w = $tn_w;
         } else {
-            $new_w = $tn_h*$src_ratio;
+            $new_w = $tn_h * $src_ratio;
             $new_h = $tn_h;
         }
-        $x_mid = $new_w/2;
-        $y_mid = $new_h/2;
+        $x_mid = $new_w / 2;
+        $y_mid = $new_h / 2;
 
         $newpic = imagecreatetruecolor(round($new_w), round($new_h));
         imagecopyresampled($newpic, $source, 0, 0, 0, 0, $new_w, $new_h, $src_w, $src_h);
         $final = imagecreatetruecolor($tn_w, $tn_h);
-        imagecopyresampled($final, $newpic, 0, 0, ($x_mid-($tn_w/2)), ($y_mid-($tn_h/2)), $tn_w, $tn_h, $tn_w, $tn_h);
-        if(Imagejpeg($final,$destination,$quality)) {
+        imagecopyresampled($final, $newpic, 0, 0, ($x_mid - ($tn_w / 2)), ($y_mid - ($tn_h / 2)), $tn_w, $tn_h, $tn_w, $tn_h);
+        if (Imagejpeg($final, $destination, $quality)) {
             return true;
         }
         return false;
+    }
+
+    public function get_all_province()
+    {
+        $sql = "SELECT * FROM tbl_province";
+        $query = $this->db->query($sql);
+        return $query->result_array();
+    }
+
+    public function get_all_city()
+    {
+        $sql = "SELECT * FROM tbl_province";
+        $query = $this->db->query($sql);
+        return $query->result_array();
     }
 }

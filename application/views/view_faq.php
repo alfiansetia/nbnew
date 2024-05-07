@@ -2,7 +2,7 @@
 <div class="banner-slider-fqa">
     <div class="bannder-table">
         <div class="banner-text">
-            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <h1><?= $page_faq['faq_heading'] ?></h1>
         </div>
     </div>
 </div>
